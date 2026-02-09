@@ -17,5 +17,21 @@ pipeline {
                 checkout scm
             }
         }
+	    stage('Testing Fail Scenario') {
+            steps {
+ 
+                echo "Running tests..."
+            }
+        }
     }
+
+    
+    post {
+        always {
+            script {
+                    sendNotification(currentBuild.currentResult, "shahtanishq72@gmail.com")
+            }
+        }
+    }
+    
 }
