@@ -20,7 +20,7 @@ pipeline {
 	    stage('Testing Fail Scenario') {
             steps {
  
-                echo "Running tests..."
+                eho "Running tests..."
             }
         }
     }
