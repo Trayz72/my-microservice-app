@@ -11,12 +11,7 @@ pipeline {
                 }
             }
         }
-        stage('Code Checkout') {
-            steps {
- 
-                checkout scm
-            }
-        }
+
 	    stage('Testing Fail Scenario') {
             steps {
  
